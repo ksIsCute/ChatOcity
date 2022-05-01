@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/styles/style.css">
+    <title>Chatocity | Forums</title>
+  </head>
+  <body>
+    <header style="background:#818eec;width:100%;border-radius:15px">
+      <h1 style="text-align:center;font-size:50px">Chatocity Forums</h1>
+      <p style="text-align:center">Please respect all other users of this forum, they're humans too.</p>
+      <br>
+    </header>
+    <ol>
+      {% autoescape false %}
+        {{ forumdata|join('<br>'|safe) }}
+      {% endautoescape %}
+    </ol>
+    <h1>The forum system is currently under development, please return soon!</h1>
+  </body>
+</html>

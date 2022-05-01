@@ -1,0 +1,119 @@
+html, body {
+  height: 100%;
+}
+
+full {
+  height: 100%;
+}
+
+body {
+  font-family: arial;
+  background: #4652af;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  background:#6873ca;
+  color: white;
+  font-family: arial;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+}
+
+input[type=button], input[type=submit], input[type="file"], input[type="submit"], [type=file]::file-selector-button {
+  border-radius: 5px;
+  border: none;
+  background:#6873ca;
+  color: white;
+  font-family: arial;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+}
+
+.filething {
+  border-radius: 5px;
+  border: none;
+  background:#6873ca;
+  color: white;
+  font-family: arial;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+}
+}
+
+input[type=textfield], [type=password], [type=text] {
+  border-radius: 5px;
+  border: 4px solid #212a73;
+  background:#6873ca;
+  color: white;
+  font-family: arial;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+}
+
+button:hover {
+  background:#131e71;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #c6c6c8;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #c6c6c8;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #c6c6c8;
+}
+
+::placeholder:hover { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6873ca;
+  opacity: 0; /* Firefox */
+}
+
+:-ms-input-placeholder:hover { /* Internet Explorer 10-11 */
+  color: #6873ca;
+}
+
+::-ms-input-placeholder:hover { /* Microsoft Edge */
+  color: #6873ca;
+}
+
+.apibox {
+  background: #6873ca;
+  width: auto;
+  border-radius: 10px;
+  border: 5px solid #9ea8f5;
+  align-items: center;
+  text-align: center;
+  justify-content:center;
+}

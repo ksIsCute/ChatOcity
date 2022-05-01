@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <link rel="shortcut icon" href="static/images/logob.png">
+    <title>{{ username }} | Homepage</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sidebars/">
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+  </head>
+  <body>
+    <div style="display:flex;height:100%;">
+      <div class="d-flex flex-column flex-shrink-0 p-3 text-white" style="width: 280px;height:100%;background:#3743A0;">
+        <a href="https://flaskpasswordthingy.ksiscute.repl.co/home" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <img src="/static/images/logo.png" class="bi me-2" width="50" height="50">
+          <span class="fs-4">Index</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="/home" class="nav-link active" aria-current="page">
+              <img height=16 width=16 src="/static/images/home.png">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/message" class="nav-link text-white">
+              <img height=16 width=16 src="/static/images/message.png">
+              Message
+              <div style='contain: content;'>
+                <img height=10 width=10 src="/static/images/ping.png" style="position:absolute;top:0;right:0;">
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/tos" class="nav-link text-white">
+              <img height=16 width=16 src="/static/images/password.png">
+              Privacy
+            </a>
+          </li>
+          <li>
+            <a href="/settings" class="nav-link text-white">
+              <img height=16 width=16 src="/static/images/settings.png">
+              Settings
+            </a>
+          </li>
+          <li>
+            <a href="/notifications" class="nav-link text-white">
+              <img height=16 width=16 src="/static/images/notification.png">
+              Notifications ({{ ncount }})
+            </a>
+          </li>
+        </ul>
+        <hr>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/static/userpfps/{{ username }}.png" alt="User Profile Photo" width="32" height="32" class="rounded-circle me-2">
+            <strong>{{ username }}</strong>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1" style="background:#606CC9;color:white;">
+            <li><a class="dropdown-item" href="/profile">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/frontend/signout">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="display: inline;line-height:20px">
+        <div style="box-sizing: border-box;
+    padding: 10px;">
+          <p style=font-size:25px;>Welcome, {{ username }}</h1>
+          <p style=font-size:20px;>Today is {{ date }}</p>
+        </div>
+        <div style="box-sizing: border-box;
+    padding: 10px;">
+          <h2>Question Of The Day:</h2>
+          <form method="post">
+            <label for="qotdresponse">Whats your favourite TV show / movie?</label>
+            <br>
+            <input type="text" name="qotdresponse" id="qotdresponse"></input>
+            <input type=submit></input>
+          </form>
+          <p>{{ qotdnote }}</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

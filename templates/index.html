@@ -1,0 +1,88 @@
+<html lang="en-US">
+  <head>
+    <link rel="shortcut icon" href="static/images/logob.png">
+    <meta name="viewport" width="device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+  </head>
+  <body>
+    <img style="display: block;margin-left: auto;margin-right: auto;" src="static/images/bluelogo.png" width=300px height=250px alt="bluelogo">
+    <div>
+      <button onclick="window.location.href='{{ url_for('signup') }}'">Sign Up</button>
+      <button onclick="window.location.href='{{ url_for('login') }}'">Login</button>
+    </div>
+    <p>Register now and join our growing community of {{ users }} users!</p>
+    <br>
+    <h3>QOTD:</h3>
+    <p>Whats your favourite TV show / movie?</p>
+    <br>
+    <h2>Top Qotd Answers:</h2>
+    {% autoescape false %}
+      <p id="answers">{{ qotdarray|join('<br>'|safe) }}</p>
+    {% endautoescape %}
+    <script>
+      if(document.getElementById("answers").innerHTML.indexOf(":boohoo:") !== -1) {
+        var e = document.getElementById("answers").innerHTML.replace(":boohoo:", "<img src='static/emojis/boohoo.png' width=20px height=20px>");
+        document.getElementById("answers").innerHTML = e;
+      }
+      if(document.getElementById("answers").innerHTML.indexOf(":nah:") !== -1) {
+          var e = document.getElementById("answers").innerHTML.replace(":nah:", "<img src='static/emojis/nah.png' width=20px height=20px>");
+        document.getElementById("answers").innerHTML = e;
+      }
+      if(document.getElementById("answers").innerHTML.indexOf(":detailedtroll:") !== -1) {
+          var e = document.getElementById("answers").innerHTML.replace(":detailedtroll:", "<img src='static/emojis/detailedtroll.png' width=20px height=20px>");
+        document.getElementById("answers").innerHTML = e;
+      }
+      if(document.getElementById("answers").innerHTML.indexOf(":pepesimp:") !== -1) {
+        var e = document.getElementById("answers").innerHTML.replace(":pepesimp:", '<img src="static/emojis/pepesimp.gif" width="20px" height="20px">');
+        document.getElementById("answers").innerHTML = e;
+      }
+      if(document.getElementById("answers").innerHTML.indexOf(":sad:") !== -1) {
+        var e = document.getElementById("answers").innerHTML.replace(":sad:", "<img src='static/emojis/sad.png' width=20px height=20px>");
+        document.getElementById("answers").innerHTML = e;
+      }
+      if(document.getElementById("answers").innerHTML.indexOf(":salute:") !== -1) {
+        var e = document.getElementById("answers").innerHTML.replace(":salute:", "<img src='static/emojis/salute.png' width=20px height=20px>");
+        document.getElementById("answers").innerHTML = e;
+      }
+      if(document.getElementById("answers").innerHTML.indexOf(":troll:") !== -1) {
+        var e = document.getElementById("answers").innerHTML.replace(":troll:", "<img src='static/emojis/troll.png' width=20px height=20px>");
+        document.getElementById("answers").innerHTML = e;
+      }
+      if(document.getElementById("answers").innerHTML.indexOf(":whatever:") !== -1) {
+        var e = document.getElementById("answers").innerHTML.replace(":whatever:", "<img src='static/emojis/whatever.png' width=20px height=20px>");
+        document.getElementById("answers").innerHTML = e;
+      }
+    </script>
+    <h2>Want to test a little something?</h2>
+    <button onclick="notify()">Click here!</button>
+    <p id="testnote"></p>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      if (!Notification) {
+        document.getElementById("testnote").innerText = 'Desktop notifications not available in your browser, meaning that this test will not work. Try a browser like Chromium.';
+        return;
+      }
+      
+      if (Notification.permission !== 'granted')
+        Notification.requestPermission();
+        document.getElementById("testnote").innerText = "Please enable notifications!"
+      });
+      
+      let numb = 0
+      function notify() {
+        if (Notification.permission !== 'granted')
+          Notification.requestPermission();
+        else {
+            numb += 1
+            let notification = new Notification('ChatOcity Notification', {
+              icon: 'https://chatocity.ksiscute.repl.co/static/images/logob.png',
+              body: `Hey there! You\'ve just tested our notification system! You\'ve done this ${numb} times!`,
+          })
+        }
+      }
+    </script>
+    <h2>Need support?</h2>
+    <p>Contact css@chatocity.tk for support!</p>
+  </body>
+</html>

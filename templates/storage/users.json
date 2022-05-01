@@ -1,0 +1,110 @@
+{
+  "0.0.0.0": {
+    "username": "default",
+    "password": "$2b$12$m4JJ.YSq.dTj.gKnTU0dUOGvFs32zuNMpDjB8JRZWBTw6Ge1qv2s2",
+    "pfp": "/static/userpfps/default.png",
+    "notifications": []
+  },
+  "199.235.85.113": {
+    "username": "css",
+    "password": "$2b$12$m4JJ.YSq.dTj.gKnTU0dUOGvFs32zuNMpDjB8JRZWBTw6Ge1qv2s2",
+    "pfp": "/static/userpfps/css.png",
+    "notifications": []
+  },
+  "185.95.187.148": {
+    "username": "alan",
+    "password": "$2b$12$/JjK.wrBUVxikpQ.9zLf7eLQw0iqeyX1IqAUdC6Ahy6U2rweHXNfK",
+    "pfp": "/static/userpfps/alan.png",
+    "notifications": []
+  },
+  "112.206.147.190": {
+    "username": "noo7",
+    "password": "$2b$12$Gb.94P0tMMXRVTYoplr/9.YNkQXxxqTG0dhKwxZgKInB1AxXOQsE6",
+    "pfp": "/static/userpfps/Noo7.png",
+    "notifications": []
+  },
+  "199.235.85.116": {
+    "username": "cat",
+    "password": "$2b$12$ME.2p0Or/CxYKCUJrSSW0.3d7x2Dr0dKncV1jBGY4Eqc0.FQVxZga",
+    "pfp": "/static/userpfps/Cat.png",
+    "notifications": []
+  },
+  "171.242.95.1": {
+    "username": "WtfIsGoingHere",
+    "password": "$2b$12$ynU5KHTsIeT0uaPR96wBBOaaiqDYLqj2sLoP3jLIvHVItRuLUpNli",
+    "pfp": "/static/userpfps/Default.png",
+    "notifications": []
+  },
+  "99.247.49.100": {
+    "username": "b1ue64",
+    "password": "$2b$12$loFzOy7eqHCsqd0G4brFHuktXixOSn0m6qlG6boWXLJyTOHGN0jmO",
+    "pfp": "/static/userpfps/B1ue64.png",
+    "notifications": []
+  },
+  "79.219.143.137": {
+    "username": "death",
+    "password": "$2b$12$NFKBsw.p8DHnHS7SUToIluEVtueALkSTw6Iygf6oozCS7A1GnjFQi",
+    "pfp": "/static/userpfps/Death.png",
+    "notifications": []
+  },
+  "142.114.163.208": {
+    "username": "will",
+    "password": "$2b$12$9CnVvZjIFdpFBXvRVxtnbuULp1nx9aybqk1THpV3kllxvYIL/D6lK",
+    "pfp": "/static/userpfps/Will.png",
+    "notifications": []
+  },
+  "198.48.188.92": {
+    "username": "gamer",
+    "password": "$2b$12$.T5MMvhfTNymLOzvy2kHmuy6qphmlHTXdwz9lJsAVfNEW8zbSaqgq",
+    "pfp": "/static/userpfps/Default.png",
+    "notifications": []
+  },
+  "34.132.224.134": {
+    "username": "asd",
+    "password": "$2b$12$cw66rMJK4OtTvYafnKGbf../iTZhzU/B06dAa.U1oTowBVldYqhHW",
+    "pfp": "/static/userpfps/default.png",
+    "notifications": []
+  },
+  "79.219.140.66": {
+    "username": "amogussussy",
+    "password": "$2b$12$vqlpDgrXcfqMNMBmPsWJ0OQDuftkxKYvbcOxrrEGtXcymJK2gIUFi",
+    "pfp": "/static/userpfps/default.png",
+    "notifications": []
+  },
+  "72.136.97.241": {
+    "username": "2vw",
+    "password": "$2b$12$dG18XO2GWofKJ5MEWHL.Rez13Q82s344GHuyGUU1hN8G5ny1c2h4e",
+    "pfp": "/static/userpfps/default.png",
+    "notifications": []
+  },
+  "87.206.149.59": {
+    "username": "UNordic",
+    "password": "$2b$12$mzOjtDBowGoSnZmSGo/fpOBX9WruyLXIEZsHzTaGFdTE/O2EQ0bQK",
+    "pfp": "/static/userpfps/Unordic.gif",
+    "notifications": []
+  },
+  "51.15.63.122": {
+    "username": "jan",
+    "password": "$2b$12$T5hH9FQlgLu/oCrsLA.dRupOThylxP/9XNCGJ4kTKNIUnVtcrV56e",
+    "pfp": "/static/userpfps/default.png",
+    "notifications": []
+  },
+  "72.139.207.218": {
+    "username": "sadge",
+    "password": "$2b$12$B/vyAoKt/SJ0N4DROYfTpe1NoO1Y7M51gljOysQSwz0QN9UwdcyNS",
+    "pfp": "/static/userpfps/default.png",
+    "notifications": []
+  },
+  "72.139.204.98": {
+    "username": "Gaming",
+    "password": "$2b$12$tqzJL1ejsBGL/IG7tV2fx.DxGX9MHKtU868V4F84kNDn3aszg2bre",
+    "pfp": "/static/userpfps/Gaming.png",
+    "notifications": []
+  },
+  "34.122.132.67": {
+    "username": "peeb",
+    "password": "$2b$12$PZA6Z7U2./CjLNG.zigV9eUwLWziOkQXLypoTvuGTH7xHLeWbd2iS",
+    "pfp": "/static/userpfps/default.png",
+    "notifications": []
+  }
+}

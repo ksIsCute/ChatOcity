@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logob.png') }}">
+    <title>404</title>
+    <link rel= "stylesheet" type= "text/css" href= "/static/styles/style.css">
+  </head>
+  <body>
+    <h1 id="pn">Path</h1>
+    <h2 id="typo"></h2>
+    <button onclick="didumean()">Yes, take me there!</button>
+    <script>
+      document.getElementById("pn").innerText = window.location.pathname
+
+      var pages = ["/settings", "/home", "/api", "/index", "/limited", "/login", "/signup", "/api/create", "/api/users"] 
+      if(pages.includes(window.location.pathname.toLowerCase())) {
+        document.getElementById("typo").innerText = `Did you mean to type ${window.location.pathname.toLowerCase()}?`
+        function didumean() {
+          window.location.href = window.location.pathname.toLowerCase()
+        }
+      }
+    </script>
+    <h2>Was not found as a website!</h2>
+    <a href="https://flaskpasswordthingy.ksiscute.repl.co">Go Back</a>
+  </body>
+</html>
